@@ -1,0 +1,51 @@
+Apr 03 11:24:16.394 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Apr 03 11:24:16.394 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 38355.
+Apr 03 11:24:16.403 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 03 11:24:16.403 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_1/project-files/dynamips 
+Apr 03 11:24:16.403 GENERAL: working_dir=/home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_1/project-files/dynamips
+Apr 03 11:24:16.403 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_1/project-files/dynamips/896e7630-53eb-47fe-a202-ab9094518cf9 
+Apr 03 11:24:16.403 GENERAL: working_dir=/home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_1/project-files/dynamips/896e7630-53eb-47fe-a202-ab9094518cf9
+Apr 03 11:24:16.404 HYPERVISOR: exec_cmd: vm create R2 2 c7200 
+Apr 03 11:24:16.404 VM: VM R2 created.
+Apr 03 11:24:16.404 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5004 
+Apr 03 11:24:16.405 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+Apr 03 11:24:16.406 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 03 11:24:16.406 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+Apr 03 11:24:16.407 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Apr 03 11:24:16.407 HYPERVISOR: exec_cmd: vm set_ios R2 /home/jlazo/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.bin 
+Apr 03 11:24:16.408 HYPERVISOR: exec_cmd: c7200 set_mac_addr R2 ca02.203f.0000 
+Apr 03 11:24:16.408 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+Apr 03 11:24:16.408 HYPERVISOR: exec_cmd: vm set_ram R2 512 
+Apr 03 11:24:16.409 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 03 11:24:16.409 HYPERVISOR: exec_cmd: vm slot_remove_binding R2 0 0 
+Apr 03 11:24:16.409 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 03 11:24:16.409 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-2FE 
+Apr 03 11:24:16.410 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 03 11:24:16.410 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-FE-TX 
+Apr 03 11:24:16.768 HYPERVISOR: exec_cmd: nio create_udp udp-8d51902e-8fec-48db-bf77-fde36dcbb3a5 10006 127.0.0.1 10007 
+Apr 03 11:24:17.012 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-8d51902e-8fec-48db-bf77-fde36dcbb3a5 
+Apr 03 11:24:17.013 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 03 11:24:17.127 HYPERVISOR: exec_cmd: nio create_udp udp-ab064843-28eb-4717-a2b5-b9ea44b066ef 10010 127.0.0.1 10011 
+Apr 03 11:24:17.130 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-ab064843-28eb-4717-a2b5-b9ea44b066ef 
+Apr 03 11:24:17.131 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 03 11:24:17.213 HYPERVISOR: exec_cmd: nio create_udp udp-f7c8cadf-e27c-439e-b938-afcc9bddeed5 10016 127.0.0.1 10017 
+Apr 03 11:24:17.215 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-f7c8cadf-e27c-439e-b938-afcc9bddeed5 
+Apr 03 11:24:17.215 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 03 11:25:27.741 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Apr 03 11:25:27.745 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_1/project-files/dynamips/c7200-adventerprisek9-mz.124-24.T5.bin-512.ghost 
+Apr 03 11:25:27.747 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 03 11:25:27.748 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Apr 03 11:25:27.749 HYPERVISOR: exec_cmd: vm start R2 
+Apr 03 11:25:57.993 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 03 11:28:58.012 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 03 11:41:54.317 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 03 11:41:54.319 HYPERVISOR: exec_cmd: vm stop R2 
+Apr 03 11:41:54.402 VM: VM R2 shutdown.
+Apr 03 11:41:54.403 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 03 11:41:54.910 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 03 11:41:54.924 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 03 11:41:54.935 HYPERVISOR: exec_cmd: vm delete R2 
+Apr 03 11:41:54.935 VM: VM R2 destroyed.
+Apr 03 11:41:54.937 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 03 11:41:55.410 HYPERVISOR: Stopped.
+Apr 03 11:41:55.411 GENERAL: reset done.

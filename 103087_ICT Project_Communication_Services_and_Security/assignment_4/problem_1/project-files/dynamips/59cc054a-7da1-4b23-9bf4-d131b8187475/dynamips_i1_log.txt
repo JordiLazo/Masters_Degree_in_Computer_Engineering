@@ -1,0 +1,65 @@
+Apr 03 11:24:16.258 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Apr 03 11:24:16.259 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60847.
+Apr 03 11:24:16.270 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 03 11:24:16.270 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_1/project-files/dynamips 
+Apr 03 11:24:16.270 GENERAL: working_dir=/home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_1/project-files/dynamips
+Apr 03 11:24:16.271 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_1/project-files/dynamips/59cc054a-7da1-4b23-9bf4-d131b8187475 
+Apr 03 11:24:16.271 GENERAL: working_dir=/home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_1/project-files/dynamips/59cc054a-7da1-4b23-9bf4-d131b8187475
+Apr 03 11:24:16.271 HYPERVISOR: exec_cmd: vm create R1 1 c7200 
+Apr 03 11:24:16.271 VM: VM R1 created.
+Apr 03 11:24:16.272 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5003 
+Apr 03 11:24:16.272 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Apr 03 11:24:16.273 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 03 11:24:16.273 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Apr 03 11:24:16.274 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Apr 03 11:24:16.279 HYPERVISOR: exec_cmd: vm set_ios R1 /home/jlazo/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.bin 
+Apr 03 11:24:16.279 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca01.201a.0000 
+Apr 03 11:24:16.279 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Apr 03 11:24:16.279 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Apr 03 11:24:16.279 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 03 11:24:16.279 HYPERVISOR: exec_cmd: vm slot_remove_binding R1 0 0 
+Apr 03 11:24:16.279 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 03 11:24:16.280 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-2FE 
+Apr 03 11:24:16.280 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 03 11:24:16.280 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-4T+ 
+Apr 03 11:24:16.489 HYPERVISOR: exec_cmd: nio create_udp udp-337e1e5d-264c-40f4-b59a-c88163f2c4d5 10002 127.0.0.1 10003 
+Apr 03 11:24:16.717 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-337e1e5d-264c-40f4-b59a-c88163f2c4d5 
+Apr 03 11:24:16.723 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 03 11:24:17.196 HYPERVISOR: exec_cmd: nio create_udp udp-2573047e-7483-47c6-88db-e99bdd2df6b0 10014 127.0.0.1 10015 
+Apr 03 11:24:17.199 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-2573047e-7483-47c6-88db-e99bdd2df6b0 
+Apr 03 11:24:17.200 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 03 11:25:26.840 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Apr 03 11:25:26.840 VM: VM Ghost created.
+Apr 03 11:25:26.842 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/jlazo/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.bin 
+Apr 03 11:25:26.856 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Apr 03 11:25:26.857 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_1/project-files/dynamips/c7200-adventerprisek9-mz.124-24.T5.bin-512.ghost 
+Apr 03 11:25:26.857 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Apr 03 11:25:26.862 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 03 11:25:26.865 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Apr 03 11:25:26.867 HYPERVISOR: exec_cmd: vm start Ghost 
+Apr 03 11:25:27.495 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 03 11:25:27.495 HYPERVISOR: exec_cmd: vm stop Ghost 
+Apr 03 11:25:27.730 VM: VM Ghost shutdown.
+Apr 03 11:25:27.732 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Apr 03 11:25:27.733 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Apr 03 11:25:27.733 VM: VM Ghost destroyed.
+Apr 03 11:25:27.739 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Apr 03 11:25:27.740 HYPERVISOR: exec_cmd: vm set_ghost_file R1 /home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_1/project-files/dynamips/c7200-adventerprisek9-mz.124-24.T5.bin-512.ghost 
+Apr 03 11:25:27.741 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 03 11:25:27.743 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Apr 03 11:25:27.746 HYPERVISOR: exec_cmd: vm start R1 
+Apr 03 11:25:58.015 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 03 11:26:28.018 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 03 11:30:28.045 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 03 11:30:39.573 HYPERVISOR: exec_cmd: vm set_ios R1 /home/jlazo/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.bin 
+Apr 03 11:41:54.315 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 03 11:41:54.317 HYPERVISOR: exec_cmd: vm stop R1 
+Apr 03 11:41:54.434 VM: VM R1 shutdown.
+Apr 03 11:41:54.435 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 03 11:41:54.936 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 03 11:41:54.937 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 03 11:41:54.941 HYPERVISOR: exec_cmd: vm delete R1 
+Apr 03 11:41:54.942 VM: VM R1 destroyed.
+Apr 03 11:41:54.943 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 03 11:41:55.409 HYPERVISOR: Stopped.
+Apr 03 11:41:55.409 GENERAL: reset done.

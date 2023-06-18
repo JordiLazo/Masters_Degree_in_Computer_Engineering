@@ -1,0 +1,43 @@
+Apr 03 13:11:38.830 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Apr 03 13:11:38.830 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41749.
+Apr 03 13:11:38.839 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 03 13:11:38.840 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_2/project-files/dynamips 
+Apr 03 13:11:38.840 GENERAL: working_dir=/home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_2/project-files/dynamips
+Apr 03 13:11:38.841 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_2/project-files/dynamips/45456cd0-f98a-4e7c-8fd8-7aeb02e82e1e 
+Apr 03 13:11:38.841 GENERAL: working_dir=/home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_2/project-files/dynamips/45456cd0-f98a-4e7c-8fd8-7aeb02e82e1e
+Apr 03 13:11:38.842 HYPERVISOR: exec_cmd: vm create R4 4 c7200 
+Apr 03 13:11:38.842 VM: VM R4 created.
+Apr 03 13:11:38.845 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5003 
+Apr 03 13:11:38.846 HYPERVISOR: exec_cmd: c7200 get_mac_addr R4 
+Apr 03 13:11:38.847 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 03 13:11:38.847 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-FE 
+Apr 03 13:11:38.848 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Apr 03 13:11:38.849 HYPERVISOR: exec_cmd: vm set_ios R4 /home/jlazo/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.bin 
+Apr 03 13:11:38.850 HYPERVISOR: exec_cmd: c7200 set_mac_addr R4 ca04.2100.0000 
+Apr 03 13:11:38.851 HYPERVISOR: exec_cmd: vm set_nvram R4 512 
+Apr 03 13:11:38.852 HYPERVISOR: exec_cmd: vm set_ram R4 512 
+Apr 03 13:11:38.853 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 03 13:11:38.854 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 PA-4T+ 
+Apr 03 13:19:51.685 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Apr 03 13:19:51.685 HYPERVISOR: exec_cmd: vm set_ghost_file R4 /home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_2/project-files/dynamips/c7200-adventerprisek9-mz.124-24.T5.bin-512.ghost 
+Apr 03 13:19:51.686 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 03 13:19:51.686 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+Apr 03 13:19:51.686 HYPERVISOR: exec_cmd: vm start R4 
+Apr 03 13:19:58.513 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 03 13:19:58.514 HYPERVISOR: exec_cmd: vm stop R4 
+Apr 03 13:19:58.535 VM: VM R4 shutdown.
+Apr 03 13:19:58.536 HYPERVISOR: exec_cmd: vm extract_config R4 
+Apr 03 13:23:43.474 HYPERVISOR: exec_cmd: nio create_udp udp-ea8d50b8-a629-43d5-bb5d-e223c021defe 10024 127.0.0.1 10025 
+Apr 03 13:23:43.691 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-ea8d50b8-a629-43d5-bb5d-e223c021defe 
+Apr 03 13:23:43.692 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 03 13:23:59.954 HYPERVISOR: exec_cmd: vm set_ios R4 /home/jlazo/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.bin 
+Apr 03 13:26:16.623 HYPERVISOR: exec_cmd: vm set_ios R4 /home/jlazo/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.bin 
+Apr 03 13:26:21.291 HYPERVISOR: exec_cmd: vm set_ios R4 /home/jlazo/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.bin 
+Apr 03 13:27:06.351 HYPERVISOR: exec_cmd: vm set_ios R4 /home/jlazo/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.bin 
+Apr 03 13:27:20.919 HYPERVISOR: exec_cmd: vm set_ios R4 /home/jlazo/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.bin 
+Apr 03 13:35:39.648 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Apr 03 13:35:39.650 HYPERVISOR: exec_cmd: vm set_ghost_file R4 /home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_2/project-files/dynamips/c7200-adventerprisek9-mz.124-24.T5.bin-512.ghost 
+Apr 03 13:35:39.653 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 03 13:35:39.656 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+Apr 03 13:35:39.657 HYPERVISOR: exec_cmd: vm start R4 
+Apr 03 13:36:10.459 HYPERVISOR: exec_cmd: vm extract_config R4 

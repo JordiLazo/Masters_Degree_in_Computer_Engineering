@@ -1,0 +1,41 @@
+Apr 03 13:11:38.773 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Apr 03 13:11:38.773 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55249.
+Apr 03 13:11:38.783 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 03 13:11:38.784 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_2/project-files/dynamips 
+Apr 03 13:11:38.784 GENERAL: working_dir=/home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_2/project-files/dynamips
+Apr 03 13:11:38.785 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_2/project-files/dynamips/5e9f2dd2-544b-4e20-9a75-d964116e1fff 
+Apr 03 13:11:38.785 GENERAL: working_dir=/home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_2/project-files/dynamips/5e9f2dd2-544b-4e20-9a75-d964116e1fff
+Apr 03 13:11:38.786 HYPERVISOR: exec_cmd: vm create R3 3 c7200 
+Apr 03 13:11:38.786 VM: VM R3 created.
+Apr 03 13:11:38.787 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Apr 03 13:11:38.788 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Apr 03 13:11:38.789 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 03 13:11:38.790 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Apr 03 13:11:38.791 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Apr 03 13:11:38.792 HYPERVISOR: exec_cmd: vm set_ios R3 /home/jlazo/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.bin 
+Apr 03 13:11:38.793 HYPERVISOR: exec_cmd: c7200 set_mac_addr R3 ca03.20e2.0000 
+Apr 03 13:11:38.794 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Apr 03 13:11:38.795 HYPERVISOR: exec_cmd: vm set_ram R3 512 
+Apr 03 13:11:38.796 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 03 13:11:38.797 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-4T+ 
+Apr 03 13:19:51.449 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Apr 03 13:19:51.451 HYPERVISOR: exec_cmd: vm set_ghost_file R3 /home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_2/project-files/dynamips/c7200-adventerprisek9-mz.124-24.T5.bin-512.ghost 
+Apr 03 13:19:51.451 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 03 13:19:51.452 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Apr 03 13:19:51.453 HYPERVISOR: exec_cmd: vm start R3 
+Apr 03 13:19:58.436 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 03 13:19:58.437 HYPERVISOR: exec_cmd: vm stop R3 
+Apr 03 13:19:58.506 VM: VM R3 shutdown.
+Apr 03 13:19:58.507 HYPERVISOR: exec_cmd: vm extract_config R3 
+Apr 03 13:23:37.260 HYPERVISOR: exec_cmd: nio create_udp udp-a549b5da-6263-40ca-8ef4-cc8dbc3888bb 10018 127.0.0.1 10019 
+Apr 03 13:23:37.484 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-a549b5da-6263-40ca-8ef4-cc8dbc3888bb 
+Apr 03 13:23:37.485 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 03 13:23:58.488 HYPERVISOR: exec_cmd: vm set_ios R3 /home/jlazo/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.bin 
+Apr 03 13:26:22.579 HYPERVISOR: exec_cmd: vm set_ios R3 /home/jlazo/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.bin 
+Apr 03 13:28:05.762 HYPERVISOR: exec_cmd: vm set_ios R3 /home/jlazo/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.bin 
+Apr 03 13:35:39.432 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Apr 03 13:35:39.433 HYPERVISOR: exec_cmd: vm set_ghost_file R3 /home/jlazo/github/103087_Project_Communication_Services_and_Security/assingment_4/problem_2/project-files/dynamips/c7200-adventerprisek9-mz.124-24.T5.bin-512.ghost 
+Apr 03 13:35:39.436 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 03 13:35:39.437 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Apr 03 13:35:39.437 HYPERVISOR: exec_cmd: vm start R3 
+Apr 03 13:36:09.654 HYPERVISOR: exec_cmd: vm extract_config R3 
